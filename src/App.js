@@ -1,14 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
+function getPresentacion(name, last_name, profesion) {
+  return (<section>
+            <h1>Hola, me llamo {name} {last_name}</h1>
+            <h3>y soy {profesion}</h3>
+          </section>);
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
+        {getPresentacion('David', 'García', 'Web developer')}
+
         <a
           className="App-link"
           href="https://reactjs.org"
