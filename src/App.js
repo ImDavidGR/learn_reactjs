@@ -8,9 +8,8 @@ function getPresentacion(name, last_name, profesion) {
     return (
         <section>
             <h1>
-                Hola, me llamo {name} {last_name}
+                Hola, me llamo {name} {last_name} y soy {profesion}
             </h1>
-            <h3>y soy {profesion}</h3>
         </section>
     );
 }
