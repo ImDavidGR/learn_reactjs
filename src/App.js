@@ -3,6 +3,7 @@ import "./assets/css/App.css";
 
 // COMPONENTS IMPORT
 import MiComponente from "./components/MiComponente";
+import Peliculas from "./components/Peliculas";
 
 function getPresentacion(name, last_name, profesion) {
     return (
@@ -24,6 +25,7 @@ function App() {
 
             <section className="componentes">
                 <MiComponente />
+                <Peliculas />
             </section>
         </div>
     );
