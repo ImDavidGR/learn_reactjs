@@ -6,6 +6,8 @@ import MiComponente from "./components/MiComponente";
 import Peliculas from "./components/Peliculas";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
+import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 
 function getPresentacion(name, last_name, profesion) {
     return (
@@ -23,10 +25,20 @@ function App() {
             <Header />
             <Slider />
 
-            <section className="componentes">
-                <MiComponente />
-                <Peliculas />
-            </section>
+            <div className="center">
+                <section id="content">
+                    <section className="componentes">
+                        <MiComponente />
+                        <Peliculas />
+                    </section>
+                </section>
+
+                <Sidebar />
+
+                <div className="clearfix"></div>
+            </div>
+
+            <Footer />
         </div>
     );
 }
