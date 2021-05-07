@@ -4,6 +4,7 @@ import "./assets/css/App.css";
 // COMPONENTS IMPORT
 import MiComponente from "./components/MiComponente";
 import Peliculas from "./components/Peliculas";
+import Header from "./components/Header";
 
 function getPresentacion(name, last_name, profesion) {
     return (
@@ -18,10 +19,7 @@ function getPresentacion(name, last_name, profesion) {
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                {getPresentacion("David", "García", "Web developer")}
-            </header>
+            <Header />
 
             <section className="componentes">
                 <MiComponente />
