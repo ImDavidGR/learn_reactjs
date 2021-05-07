@@ -5,6 +5,7 @@ import "./assets/css/App.css";
 import MiComponente from "./components/MiComponente";
 import Peliculas from "./components/Peliculas";
 import Header from "./components/Header";
+import Slider from "./components/Slider";
 
 function getPresentacion(name, last_name, profesion) {
     return (
@@ -20,6 +21,7 @@ function App() {
     return (
         <div className="App">
             <Header />
+            <Slider />
 
             <section className="componentes">
                 <MiComponente />
