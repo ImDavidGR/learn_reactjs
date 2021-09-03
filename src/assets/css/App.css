@@ -90,6 +90,10 @@ body {
     color: #3cb2d3;
 }
 
+#menu .active {
+    border-bottom: 2px solid #3cb2d3;
+}
+
 #slider {
     width: 100%;
     height: 350px;
@@ -228,6 +232,18 @@ body {
     cursor: pointer;
 }
 
+.btn-danger {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-right: 20px;
+}
+
+.btn-primary {
+    background-color: #ffd900;
+    float: left;
+}
+
 .btn-success {
     background: rgb(23, 150, 19);
 }
@@ -250,6 +266,7 @@ body {
     font-size: 17px;
 }
 
+input[type="file"],
 input[type="text"],
 textarea {
     width: 100%;

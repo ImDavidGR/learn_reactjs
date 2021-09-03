@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 class MiComponente extends Component {
     render() {
@@ -25,13 +25,17 @@ class MiComponente extends Component {
             <section className="mi-componente">
                 <h1>Receta: {receta.nombre}</h1>
                 <h4>{"Calorias: " + receta.calorias}</h4>
-
-                <p>Ingredientes: </p>
                 <ol>
+                    <p>Ingredientes: </p>
                     {receta.ingredientes.map((ingrediente, i) => {
                         return <li key={i}>{ingrediente}</li>;
                     })}
+
                 </ol>
+
+                {this.props.saludo &&
+                    <h3>{this.props.saludo}</h3>
+                }
             </section>
         );
     }
